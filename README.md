@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <h1>🧙‍♂️ Tax Wizard AI</h1>
+  <p><strong>Optimize Your Taxes with the Power of Generative AI</strong></p>
+  <p><i>A smart, intuitive, and AI-powered Indian Income Tax calculator built for the future.</i></p>
+</div>
 
-## Getting Started
+---
 
-First, run the development server:
+## 🚀 Overview
 
+**Tax Wizard AI** is a state-of-the-art Next.js web application designed to help users navigate the complexities of Indian Income Tax. Whether you are directly entering your salary details or uploading your Form 16, Tax Wizard instantly calculates your tax liabilities, visualizes the data, and most importantly—employs **Generative AI** to provide custom, personalized tax-saving advice tailored strictly to your financial profile.
+
+Built as a sleek, modern solution for a Gen AI Hackathon!
+
+## ✨ Key Features
+
+- **🧠 Smart AI Tax Advisor:** Integrates OpenAI's GPT-4o-mini to analyze your income, deductions, and tax regime comparative data, generating plain-English (and Hinglish!) actionable tips to reduce your tax footprint.
+- **📊 Precision Indian Tax Engine:** Fully updated logic for the latest tax regimes, incorporating standard deductions, Section 80C, HRA exemptions, Section 87A rebates, and Health/Education Cess.
+- **📈 Interactive Data Visualization:** Utilizes Recharts to provide beautiful, responsive bar charts comparing the Old and New tax regimes at a glance.
+- **📄 Form 16 Upload Simulation:** Designed to process and simulate OCR extraction of real Form 16 PDF documents, making data entry completely frictionless.
+- **📥 One-Click PDF Reports:** Securely generate and download comprehensive `Tax_Record.pdf` breakdowns directly to your device via `jsPDF`.
+- **🔊 Accessibility First:** Built-in Text-to-Speech functionality so users can listen to their tax summaries live.
+
+## 🛠️ Technology Stack
+
+- **Frontend:** Next.js 14, React, Tailwind CSS, Framer Motion
+- **Backend APIs:** Next.js API Routes (Serverless)
+- **Generative AI:** OpenAI GPT API (`gpt-4o-mini`)
+- **Libraries:** `recharts` (Visualization), `jspdf` (Report Generation)
+
+## 💻 Getting Started
+
+To run the Tax Wizard AI locally on your machine:
+
+### 1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/anvinandwani17/tax-wizard.git
+cd tax-wizard
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Set Up Environment Variables
+Create a file named `.env.local` in the root of your project and add your OpenAI API Key:
+```env
+OPENAI_API_KEY=your_openai_api_key_here
+```
+*(If you do not provide an API key, the app will gracefully fall back to a simulated AI response for demo purposes).*
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Run the Development Server
+```bash
+npm run dev
+```
 
-## Learn More
+Open [http://localhost:3000](http://localhost:3000) with your browser to experience the Tax Wizard.
 
-To learn more about Next.js, take a look at the following resources:
+## 🏆 Hackathon Objective
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project leverages the fast real-time generative capabilities of LLMs to dynamically formulate personalized financial strategies on the fly. By turning dry tax math into human-readable advice, **Tax Wizard** demonstrates how Generative AI can democratize financial literacy and proactive tax planning.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Created by anvinandwani17 for the Gen AI Hackathon.*
