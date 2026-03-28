@@ -60,6 +60,3 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to experie
 ## 🏆 Hackathon Objective
 
 This project leverages the fast real-time generative capabilities of LLMs to dynamically formulate personalized financial strategies on the fly. By turning dry tax math into human-readable advice, **Tax Wizard** demonstrates how Generative AI can democratize financial literacy and proactive tax planning.
-
----
-*Created by anvinandwani17 for the Gen AI Hackathon.*
